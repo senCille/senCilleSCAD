@@ -1,0 +1,249 @@
+object AboutInvoicingView: TAboutInvoicingView
+  Left = 497
+  Top = 148
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'About senCille.es'
+  ClientHeight = 429
+  ClientWidth = 402
+  Position = DesktopCenter
+  FormFactor.Width = 2020
+  FormFactor.Height = 1273
+  FormFactor.Devices = [Desktop]
+  FormFamily = 'TForm'
+  OnKeyDown = FormKeyDown
+  Left = 497
+  Top = 148
+  DesignerMasterStyle = 1
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xDC065B79
+    HitTest = False
+    Margins.Left = 9.000000000000000000
+    Margins.Top = 9.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 15.000000000000000000
+    Size.Width = 378.000000000000000000
+    Size.Height = 405.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claWhite
+    Stroke.Thickness = 3.000000000000000000
+    XRadius = 9.000000000000000000
+    YRadius = 9.000000000000000000
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+    object BtnClose: TButton
+      Position.X = 267.000000000000000000
+      Position.Y = 352.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cerrar'
+      OnClick = BtnCloseClick
+    end
+    object Text1: TText
+      HitTest = False
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 337.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Manufacturing Software'
+      TextSettings.Font.Size = 33.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFFDDDDDD
+      object Panel1: TPanel
+        Position.X = 7.000000000000000000
+        Position.Y = 221.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 145.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LabelIcons8: TLabel
+          Cursor = crHandPoint
+          StyledSettings = [Family, Size]
+          HitTest = True
+          Position.X = 10.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 207.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {04040000000000000004000000}
+          TextSettings.FontColor = claBlue
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'Icons Provided by Icons8'
+          OnClick = LabelIcons8Click
+        end
+        object Label6: TLabel
+          Position.X = 43.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 128.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Calle de las Tercias, 19'#13#10
+        end
+        object LabelWebSenCille: TLabel
+          Cursor = crHandPoint
+          StyledSettings = [Family, Size]
+          HitTest = True
+          Position.X = 66.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 95.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {04040000000000000004000000}
+          TextSettings.FontColor = claBlue
+          TextSettings.WordWrap = False
+          Text = 'www.sencille.es'
+          OnClick = LabelWebSenCilleClick
+        end
+        object Label1: TLabel
+          Position.X = 35.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 182.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = '47300 PE'#209'AFIEL (Valladolid)'
+        end
+        object Label3: TLabel
+          Position.X = 59.000000000000000000
+          Position.Y = 43.000000000000000000
+          Size.Width = 118.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Phone. 607 880 970'
+          Visible = False
+        end
+        object Label2: TLabel
+          Position.X = 52.000000000000000000
+          Position.Y = 46.000000000000000000
+          Size.Width = 108.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = '+34 607 880 970'
+        end
+        object Label4: TLabel
+          Position.X = 49.000000000000000000
+          Position.Y = 72.000000000000000000
+          Text = ' +34 983 880 970'
+        end
+      end
+    end
+    object Viewport3D1: TViewport3D
+      Color = claNull
+      HitTest = False
+      Position.X = 16.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 337.000000000000000000
+      Size.Height = 169.000000000000000000
+      Size.PlatformDefault = False
+      object Light1: TLight
+        Color = claWhite
+        LightType = Directional
+        SpotCutOff = 180.000000000000000000
+        Position.X = -4.972735404968262000
+        Position.Y = -8.621065139770508000
+        Position.Z = 0.000001339281197943
+        RotationAngle.X = 24.660659790039060000
+        RotationAngle.Z = 22.268035888671880000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = 
+          '(-0.209528207778931,-0.0412370041012764,-0.188650131225586,0.958' +
+          '544969558716)'
+      end
+      object GlowEffect1: TGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = claGold
+        Opacity = 0.899999976158142100
+      end
+      object Cube1: TCube
+        Position.X = -0.386544138193130500
+        Position.Y = 1.010106325149536000
+        Position.Z = 0.000001636869001231
+        RotationAngle.X = 77.204421997070310000
+        RotationAngle.Y = 0.709136962890625000
+        RotationAngle.Z = 28.656188964843750000
+        Width = 0.143776848912239100
+        Height = 0.589947819709777800
+        Depth = 0.030569851398468020
+        MaterialSource = GouraudMaterialSource1
+        Quanternion = 
+          '(0.601072192192078,-0.164632141590118,-0.0964489653706551,0.7760' +
+          '83469390869)'
+        object FloatAnimation1: TFloatAnimation
+          AnimationType = InOut
+          AutoReverse = True
+          Enabled = True
+          Duration = 4.000000000000000000
+          Interpolation = Back
+          Loop = True
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+        object ColorAnimation1: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Material.Diffuse'
+          StartValue = xFFD49B0B
+          StopValue = claRed
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+        object Text3D1: TText3D
+          Position.X = 1.112263679504395000
+          Position.Y = -0.502195060253143300
+          Position.Z = 0.778045356273651100
+          RotationAngle.X = 24.555427551269530000
+          RotationAngle.Y = 341.495056152343800000
+          RotationAngle.Z = 20.262855529785160000
+          Width = 15.995641708374020000
+          Height = 4.061948299407959000
+          Depth = 0.997694492340087900
+          HitTest = False
+          Font.Size = 3.000000000000000000
+          Font.StyleExt = {00070000000000000004000000}
+          Text = 'senCille'
+          Flatness = 1.000000000000000000
+          Sides = [Front, Back, Shaft]
+          MaterialBackSource = GouraudMaterialSource2
+          MaterialShaftSource = GouraudMaterialSource2
+          MaterialSource = GouraudMaterialSource2
+          Quanternion = 
+            '(-0.730361938476563,-0.124543741345406,0.188292741775513,0.64467' +
+            '5731658936)'
+        end
+      end
+    end
+  end
+  object GouraudMaterialSource1: TLightMaterialSource
+    Diffuse = claTomato
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 314
+    Top = 62
+  end
+  object GouraudMaterialSource2: TLightMaterialSource
+    Diffuse = claCornflowerblue
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = claCoral
+    Shininess = 30
+    Left = 82
+    Top = 80
+  end
+end
