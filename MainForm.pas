@@ -672,7 +672,7 @@ end;
 
 procedure TFView.CallWebHelp;
 begin
-   OpenURL('https://en.wikibooks.org/wiki/OpenSCAD_User_Manual#'+FView.TextEditor.FullWordAtCursor);
+   OpenURL('https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language#'+FView.TextEditor.FullWordAtCursor);
 end;
 
 function TFView.GetOpenSCADPath:string;
