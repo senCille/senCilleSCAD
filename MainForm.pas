@@ -86,6 +86,7 @@ type
     Image14: TImage;
     EditFileName: TEdit;
     LabelExport: TLabel;
+    StyleBookCustomized: TStyleBook;
     procedure BtnLoadFromFileClick(Sender: TObject);
     procedure BtnSaveToFileClick(Sender: TObject);
     procedure BtnUndoClick(Sender: TObject);
