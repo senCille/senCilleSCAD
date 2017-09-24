@@ -350,7 +350,7 @@ begin
    ExeName      := ExtractFileName(ParamStr(0));
    Extension    := ExtractFileExt (ParamStr(0));
    AppName      := Copy(ExeName, 1, Length(ExeName) - Length(Extension));
-   FINIFileName := AppFolder+PathDelim+AppName+'.ini';
+   FINIFileName := GetEnvironmentVariable('APPDATA')+PathDelim+AppName+'.ini';
 
    {--- Things in development ---}
    FView.CheckBoxApplyViewAll.Visible := False;
