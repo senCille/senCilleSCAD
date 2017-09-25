@@ -345,6 +345,8 @@ begin
    FView.ExpanderExecuteOptions.IsExpanded := False;
    FView.LabelExePath.Text := TextNotPath;
    FPathToExe := '';
+   FView.TextEditor.Font.Family := 'Courier New';
+   FView.TextEditor.Font.Size := 12;
 
    AppFolder    := TPath.GetDirectoryName(ParamStr(0));
    ExeName      := ExtractFileName(ParamStr(0));
@@ -519,6 +521,7 @@ begin
    FView.TextEditor.CutToClipboard;
 end;
 
+{$IFDEF MSWINDOWS}
 // Runs application and returns PID. 0 if failed.
 function RunApplication(const AExecutableFile, AParameters: string; const AShowOption: Integer = SW_SHOWNORMAL): Integer;
 var _SEInfo: TShellExecuteInfo;
@@ -539,6 +542,7 @@ begin
       Result := GetProcessID(_SEInfo.hProcess);
    end;
 end;
+{$ENDIF}
 
 procedure TFView.BtnExportClick(Sender: TObject);
 var Parameters  :string;
@@ -556,7 +560,9 @@ begin
 
    NewFileName := TPath.GetDirectoryName(FileName)+'\'+EditFileName.Text.Trim+'.'+ComboBoxFileType.Items[ComboBoxFileType.ItemIndex];
    Parameters := ' -o ';
+   {$IFDEF MSWINDOWS}
    RunApplication(PathToExe, Parameters+' "'+NewFileName+'" "'+FTempFileName+'"');
+   {$ENDIF}
    if FView.CheckBoxAndOpen.IsChecked then begin
       OpenURL('"'+NewFileName+'"');
       //ShellExecute(0, 'OPEN', PChar(NewFileName), '', '', SW_SHOWNORMAL);
