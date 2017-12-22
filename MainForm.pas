@@ -577,8 +577,6 @@ begin
              [ --colorscheme=[Cornfield|Sunset|Metallic|Starnight|BeforeDawn|Nature|DeepOcean] ] \
              [ --csglimit=num ]\
           *)
-
-
 end;
 
 procedure TFView.BtnHighlightClick(Sender: TObject);

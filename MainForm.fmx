@@ -4478,56 +4478,6 @@ object FView: TFView
       Top = 288
     end
   end
-  object DialogSearch: TTMSFMXMemoFindDialog
-    Memo = TextEditor
-    NotFoundMessage = 'Finished searching the document. The search item was not found.'
-    UILanguage.FindCaption = 'Find'
-    UILanguage.FindWhat = 'Find what:'
-    UILanguage.CaseSensitive = 'Case sensitive'
-    UILanguage.Expression = 'Expression'
-    UILanguage.CloseIfFound = 'Close if Found'
-    UILanguage.WholeWordOnly = 'Whole word Only'
-    UILanguage.WrapAtEndOfFile = 'Wrap at the end of file'
-    UILanguage.ContinueToNextFile = 'Continue to next file'
-    UILanguage.Find = 'Find'
-    UILanguage.Previous = 'Previous'
-    UILanguage.SetMarker = 'Set Marker'
-    UILanguage.Close = 'Close'
-    UILanguage.More = 'More'
-    UILanguage.Less = 'Less'
-    UILanguage.Direction = 'Direction'
-    UILanguage.Up = 'Up'
-    UILanguage.Down = 'Down'
-    UILanguage.Selection = 'Selection'
-    Left = 432
-    Top = 416
-  end
-  object DialogFindAndReplace: TTMSFMXMemoFindAndReplaceDialog
-    Memo = TextEditor
-    NotFoundMessage = 'Finished searching the document. The search item was not found.'
-    UILanguage.ReplaceCaption = 'Replace'
-    UILanguage.FindWhat = 'Find what:'
-    UILanguage.ReplaceWith = 'Replace with:'
-    UILanguage.CaseSensitive = 'Case sensitive'
-    UILanguage.Expression = 'Expression'
-    UILanguage.WholeWordOnly = 'Whole word Only'
-    UILanguage.WrapAtEndOfFile = 'Wrap at the end of file'
-    UILanguage.Find = 'Find'
-    UILanguage.Replace = 'Replace'
-    UILanguage.ReplaceAll = 'Replace &All'
-    UILanguage.ReplaceAllRange = 'Replace all range'
-    UILanguage.Close = 'Close'
-    UILanguage.More = 'More'
-    UILanguage.Less = 'Less'
-    UILanguage.CurrentFile = 'Current File'
-    UILanguage.Selection = 'Selection'
-    UILanguage.AllOpenFiles = 'All open files'
-    UILanguage.Direction = 'Direction'
-    UILanguage.Up = 'Up'
-    UILanguage.Down = 'Down'
-    Left = 432
-    Top = 480
-  end
   object StyleBookCustomized: TStyleBook
     Styles = <
       item
@@ -5770,5 +5720,55 @@ object FView: TFView
       end>
     Left = 192
     Top = 392
+  end
+  object DialogSearch: TTMSFMXMemoFindDialog
+    Memo = TextEditor
+    NotFoundMessage = 'Finished searching the document. The search item was not found.'
+    UILanguage.FindCaption = 'Find'
+    UILanguage.FindWhat = 'Find what:'
+    UILanguage.CaseSensitive = 'Case sensitive'
+    UILanguage.Expression = 'Expression'
+    UILanguage.CloseIfFound = 'Close if Found'
+    UILanguage.WholeWordOnly = 'Whole word Only'
+    UILanguage.WrapAtEndOfFile = 'Wrap at the end of file'
+    UILanguage.ContinueToNextFile = 'Continue to next file'
+    UILanguage.Find = 'Find'
+    UILanguage.Previous = 'Previous'
+    UILanguage.SetMarker = 'Set Marker'
+    UILanguage.Close = 'Close'
+    UILanguage.More = 'More'
+    UILanguage.Less = 'Less'
+    UILanguage.Direction = 'Direction'
+    UILanguage.Up = 'Up'
+    UILanguage.Down = 'Down'
+    UILanguage.Selection = 'Selection'
+    Left = 432
+    Top = 416
+  end
+  object DialogFindAndReplace: TTMSFMXMemoFindAndReplaceDialog
+    Memo = TextEditor
+    NotFoundMessage = 'Finished searching the document. The search item was not found.'
+    UILanguage.ReplaceCaption = 'Replace'
+    UILanguage.FindWhat = 'Find what:'
+    UILanguage.ReplaceWith = 'Replace with:'
+    UILanguage.CaseSensitive = 'Case sensitive'
+    UILanguage.Expression = 'Expression'
+    UILanguage.WholeWordOnly = 'Whole word Only'
+    UILanguage.WrapAtEndOfFile = 'Wrap at the end of file'
+    UILanguage.Find = 'Find'
+    UILanguage.Replace = 'Replace'
+    UILanguage.ReplaceAll = 'Replace &All'
+    UILanguage.ReplaceAllRange = 'Replace all range'
+    UILanguage.Close = 'Close'
+    UILanguage.More = 'More'
+    UILanguage.Less = 'Less'
+    UILanguage.CurrentFile = 'Current File'
+    UILanguage.Selection = 'Selection'
+    UILanguage.AllOpenFiles = 'All open files'
+    UILanguage.Direction = 'Direction'
+    UILanguage.Up = 'Up'
+    UILanguage.Down = 'Down'
+    Left = 432
+    Top = 480
   end
 end
