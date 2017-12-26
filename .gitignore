@@ -1,0 +1,14 @@
+/OSX32/Debug
+/Win32/Debug
+/Win64/Debug
+__history
+/bin/Install senCilleSCAD.exe
+*.stat
+/bin/senCilleSCAD.exe
+/bin/senCilleSCAD.rsm
+/info.plist.TemplateOSX.xml
+/*.tmp
+/*.local
+/*.identcache
+/*.res
+/Entitlement.TemplateOSX32.xml
